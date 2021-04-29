@@ -35,8 +35,10 @@ html {
   color: #ee6c4d;
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease-in;
 }
 
 .section-1-icons i.change {
   transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s 0.3s ease-in;
 }
