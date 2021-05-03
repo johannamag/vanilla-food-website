@@ -13,6 +13,65 @@ html {
   font-size: 62.5%;
 }
 
+.navbar {
+  width: 100%;
+  height: 10rem;
+  background-color: #ee6c4d;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  transform: translateY(-10rem);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.navbar.opennav {
+  transform: translateY(0);
+}
+
+.nav-link {
+  margin: 0 4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover i,
+.nav-link:hover span {
+  color: #3d5a80;
+}
+
+.nav-link i {
+  font-size: 2.5rem;
+  margin-right: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link span {
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu {
+  width: 4rem;
+  height: 6rem;
+  background-color: #ee6c4d;
+  position: fixed;
+  top: 0;
+  left: 5rem;
+  border-radius: 0rem 0rem 30rem 30rem;
+  z-index: 100;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.menu.open {
+  transform: translateY(10rem);
+}
+
 .section-1 {
   width: 100%;
   height: 100vh;
