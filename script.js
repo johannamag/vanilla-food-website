@@ -15,3 +15,11 @@ setInterval(() => {
     icon.nextElementSibling.classList.add("change");
   }
 }, 5000);
+
+const menu = document.querySelector(".menu");
+const nav = document.querySelector(".navbar");
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("open");
+  nav.classList.toggle("opennav");
+});
